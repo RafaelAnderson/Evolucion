@@ -1,0 +1,10 @@
+# This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
+# For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
+language: java
+jdk:
+- openjdk8
+script: "./mvnw clean install"
+before_install:
+- chmod +x mvnw
+notifications:
+  email: rp_9966@hotmail.com
